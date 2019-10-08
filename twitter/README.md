@@ -59,5 +59,9 @@ type Query {
 type Mutations {
     signup(userInput: { name: String!, email: String!, handle: String!, password: String! }): User!
     login(credentials: { username: String!, password: String! }): User!
+    postTweet(tweetInput: { tweet: String! }): Tweet!
+    replyTweet(tweetInput: { tweet: String! }, concernerdTweet: TweetId!): Tweet!
+    retweet(tweet: { tweet: String! }, concernerdTweet: TweetId!): Tweet!
+    likeTweet(concernerdTweet: TweetId!): Tweet!
 }
 ```
