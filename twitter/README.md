@@ -61,8 +61,8 @@ type Mutations {
     signup(userInput: { name: String!, email: String!, handle: String!, password: String! }): User!
     login(credentials: { username: String!, password: String! }): User!
     postTweet(tweetInput: { tweet: String! }): Tweet!
-    replyTweet(tweetInput: { tweet: String! }, concernerdTweet: TweetId!): Tweet!
-    retweet(tweet: { tweet: String! }, concernerdTweet: TweetId!): Tweet!
-    likeTweet(concernerdTweet: TweetId!): Tweet!
+    replyTweet(tweetInput: { tweet: String! }, concernedTweet: TweetId!): Tweet!
+    retweet(tweet: { tweet: String! }, concernedTweet: TweetId!): Tweet!
+    likeTweet(concernedTweet: TweetId!): Tweet!
 }
 ```
