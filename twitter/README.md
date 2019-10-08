@@ -25,6 +25,7 @@ type Tweet {
     children: [ID!]!
     tweetBy: User!
     tweetAt: Int!
+    retweetBy: [User!]!
     mentionedUsers: [User!]!
     mentionedHastags: [String!]!
 }
