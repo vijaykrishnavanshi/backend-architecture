@@ -2,14 +2,14 @@
 
 Key Components:
 * Users
-* Pictures
+* Media
 
 Key Features:
 * Insta Feed
 * User Profile View
-* Explore Photos
+* Explore Media
 
 Required Constraints:
 * Quick profile retrieval
-* Instagram Photo retrieval
+* Instant Media retrieval
 * User Exploration (Similar Photos)
