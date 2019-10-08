@@ -40,7 +40,8 @@ type User {
     handle: String!
     name: String!
     createdAt: Int!
-    tweetFeed(paginatedInput: { pageNo: Int!, pageSize: Int! }): [Tweet!]!
+    tweets(paginatedInput: { pageNo: Int!, pageSize: Int! }): [Tweet!]!
+    tweetFeed(paginatedInput: { pageNo: Int!, pageSize: Int! }): [Tweet!]! @authenticated({ role: ["SELF"] })
 }
 ```
 
