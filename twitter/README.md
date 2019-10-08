@@ -26,6 +26,7 @@ type Tweet {
     tweetBy: User!
     tweetAt: Int!
     retweetBy: [User!]!
+    likeBy: [User!]!
     mentionedUsers: [User!]!
     mentionedHastags: [String!]!
 }
