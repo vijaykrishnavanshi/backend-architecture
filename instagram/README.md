@@ -11,4 +11,5 @@ Key Features:
 
 Required Constraints:
 * Quick profile retrieval
+* Instagram Photo retrieval
 * User Exploration (Similar Photos)
